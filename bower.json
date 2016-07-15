@@ -1,0 +1,27 @@
+{
+  "name": "ucbacm",
+  "description": "Pagina web de raking de scores e historial de concursos de programacion competitiva de la acm",
+  "main": "",
+  "authors": [
+    "Centro de Estudiantes 2016"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "ACM",
+    "programacion",
+    "competitiva",
+    "code",
+    "codigo",
+    "competitive",
+    "programming"
+  ],
+  "homepage": "https://github.com/LeonardoVelarde/ucbacm",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
