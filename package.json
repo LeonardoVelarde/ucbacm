@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "postinstall": "bower prune && bower install",
     "start": "node ./bin/www",
-    "test": "./node_modules/mocha/bin/mocha ./tests"
+    "test": "./node_modules/mocha/bin/mocha ./tests",
+    "test:path": "./node_modules/mocha/bin/mocha"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
