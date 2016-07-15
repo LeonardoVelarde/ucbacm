@@ -16,4 +16,4 @@
 
 #### How to run tests:
 - `npm run test`
-- `npm run test:path &lt;path/to/file.test.js&gt;`
+- `npm run test:path <path/to/file.test.js>`
