@@ -1,5 +1,4 @@
-var libpath = process.env.UCBACM_COV ? '../models-cov' : '../models';
-var Team = require( libpath + '/Team');
+var Team = require('../models/Team');
 var assert = require('chai').assert;
 
 describe('Team', function() {
