@@ -1,4 +1,6 @@
-# UCBACM [![Build Status](https://travis-ci.org/LeonardoVelarde/ucbacm.svg?branch=master)](https://travis-ci.org/LeonardoVelarde/ucbacm)
+# UCBACM
+[![Build Status](https://travis-ci.org/LeonardoVelarde/ucbacm.svg?branch=master)](https://travis-ci.org/LeonardoVelarde/ucbacm)
+[![Coverage Status](https://coveralls.io/repos/github/LeonardoVelarde/ucbacm/badge.svg?branch=master)](https://coveralls.io/github/LeonardoVelarde/ucbacm?branch=master)
 
 #### Start the app
 
@@ -15,5 +17,5 @@
 - `node bin/www`
 
 #### How to run tests:
-- `npm run test`
-- `npm run test:path <path/to/file.test.js>`
+- `npm test` (runs all tests)
+- `npm run test:path <path/to/file.test.js>` (runs tests in specified file)

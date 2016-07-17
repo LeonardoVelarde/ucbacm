@@ -5,8 +5,8 @@
   "scripts": {
     "postinstall": "bower prune && bower install",
     "start": "node ./bin/www",
-    "test": "./node_modules/mocha/bin/mocha ./tests",
-    "test:path": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/.bin/mocha ./tests",
+    "test:path": "./node_modules/.bin/mocha"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -15,9 +15,14 @@
     "cookie-parser": "~1.3.5",
     "debug": "~2.2.0",
     "express": "~4.13.1",
+    "jscover": "^1.0.0",
     "mocha": "^2.5.3",
     "morgan": "~1.6.1",
     "pug": "^2.0.0-beta3",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.11",
+    "mocha-lcov-reporter": "^1.2.0"
   }
 }
