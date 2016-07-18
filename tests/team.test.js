@@ -41,8 +41,4 @@ describe('Team', function() {
     assert.isUndefined(newTeam.member3);
   });
 
-  it('should throw exection creating a team with no members', function(){
-    assert.throws(Team, Error, Team.noTeamMembersErrorMessage);
-  });
-
 });
