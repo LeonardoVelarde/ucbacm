@@ -41,4 +41,12 @@ describe('Team', function() {
     assert.isUndefined(newTeam.member3);
   });
 
+  it('sould be able to create teams without new keyword', function(){
+    var newTeam = Team('TeamName', ['First TeamMember', 'Second TeamMember', 'Third TeamMember']);
+    assert.equal(newTeam.teamName, 'TeamName');
+    assert.equal(newTeam.member1, 'First TeamMember');
+    assert.equal(newTeam.member2, 'Second TeamMember');
+    assert.equal(newTeam.member3, 'Third TeamMember');
+  });
+
 });

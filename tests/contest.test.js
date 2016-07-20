@@ -29,4 +29,12 @@ describe('Contest', function() {
     assert.equal(newContest.category, 'Advanced');
   });
 
+  it('sould be able to create a contets without new keyword', function(){
+    var contestDate = new Date(2016, 3, 15);
+    var newContest = Contest('First Contest', new Date(2016, 3, 15), 'Advanced');
+    assert.equal(newContest.name, 'First Contest');
+    assert.equal(newContest.contestDate.getTime(), contestDate.getTime());
+    assert.equal(newContest.category, 'Advanced');
+  });
+
 });
