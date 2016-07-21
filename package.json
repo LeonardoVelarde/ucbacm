@@ -8,7 +8,7 @@
     "test": "./node_modules/.bin/mocha ./tests",
     "test:path": "./node_modules/.bin/mocha",
     "coverage": "node_modules/.bin/istanbul cover node_modules/mocha/bin/_mocha --report html tests/",
-    "coverage:path": "node_modules/.bin/istanbul cover node_modules/mocha/bin/_mocha --report html"
+    "coverage:of": "node_modules/.bin/istanbul cover node_modules/mocha/bin/_mocha --report html"
   },
   "dependencies": {
     "body-parser": "~1.13.2",

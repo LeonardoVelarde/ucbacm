@@ -13,12 +13,16 @@
 - `npm install`
 - `bower install`
 
-#### Run
-- `node bin/www`
+#### How to run the app
+- `node bin/www` or `npm start`
 
 #### How to run tests:
 - `npm test` (runs all tests)
-- `npm run test:path <path/to/file.test.js>` (runs tests in specified file)
+- `npm run test:path <path/to/file.test.js or path/to/folder>` (runs tests in specified file or folder)
+
+#### How to run coverage:
+- `npm run coverage` (runs coverage of all tests)
+- `npm run coverage:of <path/to/file.test.js or path/to/folder>` (runs coverage of specified tests or folder)
 
 ## License
 
