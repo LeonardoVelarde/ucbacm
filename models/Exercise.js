@@ -1,11 +1,8 @@
-var Exercise = function(name, category, difficulty, descriptionArray){
+var Exercise = function(name, category, difficulty, descriptionString){
   this.name = name;
   this.category = category;
   this.difficulty = difficulty;
-  this.description = [];
-  for(var i = 0; i < descriptionArray.length; i++){
-    this.description.push(this.escapeHTML(descriptionArray[i]));
-  }
+  this.descriptionString = this.escapeHTML(descriptionString);
 };
 
 Exercise.prototype.escapeHTML = require('escape-html');
