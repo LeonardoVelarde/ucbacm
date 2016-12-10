@@ -8,7 +8,8 @@
     "test": "./node_modules/.bin/mocha ./tests",
     "tests:from": "./node_modules/.bin/mocha",
     "coverage": "node_modules/.bin/istanbul cover node_modules/mocha/bin/_mocha --report html tests/",
-    "coverage:from": "node_modules/.bin/istanbul cover node_modules/mocha/bin/_mocha --report html"
+    "coverage:from": "node_modules/.bin/istanbul cover node_modules/mocha/bin/_mocha --report html",
+    "sass": "node_modules/.bin/node-sass -o public/stylesheets/ public/sass/"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "coveralls": "^2.11.11",
+    "db-migrate": "^0.10.0-beta.20",
     "istanbul": "^0.4.4",
     "mocha": "^2.5.3",
     "mocha-lcov-reporter": "^1.2.0"

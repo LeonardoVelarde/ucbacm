@@ -1,5 +1,780 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .preloader
+    .preloder-wrap
+      .preloder-inner
+        .ball
+        .ball
+        .ball
+        .ball
+        .ball
+        .ball
+        .ball
+  // /.preloader
+  header#navigation
+    .navbar.navbar-inverse.navbar-fixed-top(role='banner')
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='index.html')
+            h1
+              img(src='images/logo.png', alt='logo')
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li.scroll.active
+              a(href='#navigation') Home
+            li.scroll
+              a(href='#about-us') About Us
+            li.scroll
+              a(href='#services') Services
+            li.scroll
+              a(href='#our-team') Our Team
+            li.scroll
+              a(href='#portfolio') Portfolio
+            li.scroll
+              a(href='#clients') Clients
+            li.scroll
+              a(href='#blog') Blog
+            li.scroll
+              a(href='#contact') Contact
+    // /navbar
+  // /#navigation
+  section#home
+    .home-pattern
+    #main-carousel.carousel.slide(data-ride='carousel')
+      ol.carousel-indicators
+        li.active(data-target='#main-carousel', data-slide-to='0')
+        li(data-target='#main-carousel', data-slide-to='1')
+        li(data-target='#main-carousel', data-slide-to='2')
+      // /.carousel-indicators
+      .carousel-inner
+        .item.active(style='background-image: url(images/slider/slide3.jpg)')
+          .carousel-caption
+            div
+              h2.heading.animated.bounceInDown 'Himu' Onepage HTML Template
+              p.animated.bounceInUp Fully Professional one page template
+              a.btn.btn-default.slider-btn.animated.fadeIn(href='#') Get Started
+        .item(style='background-image: url(images/slider/slide2.jpg)')
+          .carousel-caption
+            div
+              h2.heading.animated.bounceInDown Get All in Onepage
+              p.animated.bounceInUp Everything is outstanding
+              a.btn.btn-default.slider-btn.animated.fadeIn(href='#') Get Started
+        .item(style='background-image: url(images/slider/slide1.jpg)')
+          .carousel-caption
+            div
+              h2.heading.animated.bounceInRight Fully Responsive Template
+              p.animated.bounceInLeft 100% Responsive HTML template
+              a.btn.btn-default.slider-btn.animated.bounceInUp(href='#') Get Started
+      // /.carousel-inner
+      a.carousel-left.member-carousel-control.hidden-xs(href='#main-carousel', data-slide='prev')
+        i.fa.fa-angle-left
+      a.carousel-right.member-carousel-control.hidden-xs(href='#main-carousel', data-slide='next')
+        i.fa.fa-angle-right
+  // /#home
+  section#about-us
+    .container
+      .text-center
+        .col-sm-8.col-sm-offset-2
+          h2.title-one Why With Us?
+          p
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+      .about-us
+        .row
+          .col-sm-6
+            h3 Why with us?
+            ul.nav.nav-tabs
+              li.active
+                a(href='#about', data-toggle='tab')
+                  i.fa.fa-chain-broken
+                  |  About
+              li
+                a(href='#mission', data-toggle='tab')
+                  i.fa.fa-th-large
+                  |  Mission
+              li
+                a(href='#community', data-toggle='tab')
+                  i.fa.fa-users
+                  |  Community
+            .tab-content
+              #about.tab-pane.fade.in.active
+                .media
+                  img.pull-left.media-object(src='images/about-us/about.jpg', alt='about us')
+                  .media-body
+                    p
+                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+              #mission.tab-pane.fade
+                .media
+                  img.pull-left.media-object(src='images/about-us/mission.jpg', alt='Mission')
+                  .media-body
+                    p
+                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+              #community.tab-pane.fade
+                .media
+                  img.pull-left.media-object(src='images/about-us/community.jpg', alt='Community')
+                  .media-body
+                    p
+                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+          .col-sm-6
+            h3 Our Skills
+            .skill-bar
+              .skillbar.clearfix(data-percent='90%')
+                .skillbar-title
+                  span HTML5 & CSS3
+                .skillbar-bar
+                .skill-bar-percent 90%
+              // End Skill Bar
+              .skillbar.clearfix(data-percent='85%')
+                .skillbar-title
+                  span UI Design
+                .skillbar-bar
+                .skill-bar-percent 85%
+              // End Skill Bar
+              .skillbar.clearfix(data-percent='70%')
+                .skillbar-title
+                  span jQuery
+                .skillbar-bar
+                .skill-bar-percent 70%
+              // End Skill Bar
+              .skillbar.clearfix(data-percent='60%')
+                .skillbar-title
+                  span PHP
+                .skillbar-bar
+                .skill-bar-percent 60%
+              // End Skill Bar
+              .skillbar.clearfix(data-percent='75%')
+                .skillbar-title
+                  span Wordpress
+                .skillbar-bar
+                .skill-bar-percent 75%
+              // End Skill Bar
+  // /#about-us
+  section#services.parallax-section
+    .container
+      .row.text-center
+        .col-sm-8.col-sm-offset-2
+          h2.title-one Services
+          p
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+      .row
+        .col-sm-12
+          .our-service
+            .services.row
+              .col-sm-4
+                .single-service
+                  i.fa.fa-th
+                  h2 Modern Design
+                  p
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.
+              .col-sm-4
+                .single-service
+                  i.fa.fa-html5
+                  h2 Web Development
+                  p
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+              .col-sm-4
+                .single-service
+                  i.fa.fa-users
+                  h2 Online Marketing
+                  p
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.
+  // /#service
+  section#our-team
+    .container
+      .row.text-center
+        .col-sm-8.col-sm-offset-2
+          h2.title-one Meet The Team
+          p
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+      #team-carousel.carousel.slide(data-interval='false')
+        a.member-left(href='#team-carousel', data-slide='prev')
+          span.glyphicon.glyphicon-chevron-left
+        a.member-right(href='#team-carousel', data-slide='next')
+          span.glyphicon.glyphicon-chevron-right
+        .carousel-inner.team-members
+          .row.item.active
+            .col-sm-6.col-md-3
+              .single-member
+                img(src='images/our-team/member1.jpg', alt='team member')
+                h4 William Hurt
+                h5 Sr. Web Developer
+                p
+                  | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                .socials
+                  a(href='#')
+                    i.fa.fa-facebook
+                  a(href='#')
+                    i.fa.fa-twitter
+                  a(href='#')
+                    i.fa.fa-google-plus
+                  a(href='#')
+                    i.fa.fa-dribbble
+                  a(href='#')
+                    i.fa.fa-linkedin
+            .col-sm-6.col-md-3
+              .single-member
+                img(src='images/our-team/member2.jpg', alt='team member')
+                h4 Alekjandra Jony
+                h5 Creative Designer
+                p
+                  | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                .socials
+                  a(href='#')
+                    i.fa.fa-facebook
+                  a(href='#')
+                    i.fa.fa-twitter
+                  a(href='#')
+                    i.fa.fa-google-plus
+                  a(href='#')
+                    i.fa.fa-dribbble
+                  a(href='#')
+                    i.fa.fa-linkedin
+            .col-sm-6.col-md-3
+              .single-member
+                img(src='images/our-team/member3.jpg', alt='team member')
+                h4 Paul Johnson
+                h5 Skilled Programmer
+                p
+                  | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                .socials
+                  a(href='#')
+                    i.fa.fa-facebook
+                  a(href='#')
+                    i.fa.fa-twitter
+                  a(href='#')
+                    i.fa.fa-google-plus
+                  a(href='#')
+                    i.fa.fa-dribbble
+                  a(href='#')
+                    i.fa.fa-linkedin
+            .col-sm-6.col-md-3
+              .single-member
+                img(src='images/our-team/member4.jpg', alt='team member')
+                h4 John Richerds
+                h5 Marketing Officer
+                p
+                  | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                .socials
+                  a(href='#')
+                    i.fa.fa-facebook
+                  a(href='#')
+                    i.fa.fa-twitter
+                  a(href='#')
+                    i.fa.fa-google-plus
+                  a(href='#')
+                    i.fa.fa-dribbble
+                  a(href='#')
+                    i.fa.fa-linkedin
+          .row.item
+            .col-sm-6.col-md-3
+              .single-member
+                img(src='images/our-team/member1.jpg', alt='team member')
+                h4 William Hurt
+                h5 Sr. Web Developer
+                p
+                  | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                .socials
+                  a(href='#')
+                    i.fa.fa-facebook
+                  a(href='#')
+                    i.fa.fa-twitter
+                  a(href='#')
+                    i.fa.fa-google-plus
+                  a(href='#')
+                    i.fa.fa-dribbble
+                  a(href='#')
+                    i.fa.fa-linkedin
+            .col-sm-6.col-md-3
+              .single-member
+                img(src='images/our-team/member3.jpg', alt='team member')
+                h4 Paul Johnson
+                h5 Skilled Programmer
+                p
+                  | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                .socials
+                  a(href='#')
+                    i.fa.fa-facebook
+                  a(href='#')
+                    i.fa.fa-twitter
+                  a(href='#')
+                    i.fa.fa-google-plus
+                  a(href='#')
+                    i.fa.fa-dribbble
+                  a(href='#')
+                    i.fa.fa-linkedin
+            .col-sm-6.col-md-3
+              .single-member
+                img(src='images/our-team/member2.jpg', alt='team member')
+                h4 Alekjandra Jony
+                h5 Creative Designer
+                p
+                  | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                .socials
+                  a(href='#')
+                    i.fa.fa-facebook
+                  a(href='#')
+                    i.fa.fa-twitter
+                  a(href='#')
+                    i.fa.fa-google-plus
+                  a(href='#')
+                    i.fa.fa-dribbble
+                  a(href='#')
+                    i.fa.fa-linkedin
+            .col-sm-6.col-md-3
+              .single-member
+                img(src='images/our-team/member4.jpg', alt='team member')
+                h4 John Richerds
+                h5 Marketing Officer
+                p
+                  | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                .socials
+                  a(href='#')
+                    i.fa.fa-facebook
+                  a(href='#')
+                    i.fa.fa-twitter
+                  a(href='#')
+                    i.fa.fa-google-plus
+                  a(href='#')
+                    i.fa.fa-dribbble
+                  a(href='#')
+                    i.fa.fa-linkedin
+  // /#Our-Team
+  section#portfolio
+    .container
+      .row.text-center
+        .col-sm-8.col-sm-offset-2
+          h2.title-one Portfolio
+          p
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+      ul.portfolio-filter.text-center
+        li
+          a.btn.btn-default.active(href='#', data-filter='*') All
+        li
+          a.btn.btn-default(href='#', data-filter='.html') Html
+        li
+          a.btn.btn-default(href='#', data-filter='.wordpress') Wordpress
+        li
+          a.btn.btn-default(href='#', data-filter='.joomla') Joomla
+        li
+          a.btn.btn-default(href='#', data-filter='.megento') Megento
+      // /#portfolio-filter
+      .portfolio-items
+        .col-sm-3.col-xs-12.portfolio-item.html
+          .view.efffect
+            .portfolio-image
+              img(src='images/portfolio/1.jpg', alt='')
+            .mask.text-center
+              h3 Novel
+              h4 Lorem ipsum dolor sit amet consectetur
+              a(href='#')
+                i.fa.fa-link
+              a(href='images/portfolio/big-item.jpg', data-gallery='prettyPhoto')
+                i.fa.fa-search-plus
+        .col-sm-3.col-xs-12.portfolio-item.jooma
+          .view.efffect
+            .portfolio-image
+              img(src='images/portfolio/2.jpg', alt='')
+            .mask.text-center
+              h3 Novel
+              h4 Lorem ipsum dolor sit amet consectetur
+              a(href='#')
+                i.fa.fa-link
+              a(href='images/portfolio/big-item4.jpg', data-gallery='prettyPhoto')
+                i.fa.fa-search-plus
+        .col-sm-3.col-xs-12.portfolio-item.wordpress
+          .view.efffect
+            .portfolio-image
+              img(src='images/portfolio/3.jpg', alt='')
+            .mask.text-center
+              h3 Novel
+              h4 Lorem ipsum dolor sit amet consectetur
+              a(href='#')
+                i.fa.fa-link
+              a(href='images/portfolio/big-item.jpg', data-gallery='prettyPhoto')
+                i.fa.fa-search-plus
+        .col-sm-3.col-xs-12.portfolio-item.megento
+          .view.efffect
+            .portfolio-image
+              img(src='images/portfolio/4.jpg', alt='')
+            .mask.text-center
+              h3 Novel
+              h4 Lorem ipsum dolor sit amet consectetur
+              a(href='#')
+                i.fa.fa-link
+              a(href='images/portfolio/big-item.jpg', data-gallery='prettyPhoto')
+                i.fa.fa-search-plus
+        .col-sm-3.col-xs-12.portfolio-item.html
+          .view.efffect
+            .portfolio-image
+              img(src='images/portfolio/5.jpg', alt='')
+            .mask.text-center
+              h3 Novel
+              h4 Lorem ipsum dolor sit amet consectetur
+              a(href='#')
+                i.fa.fa-link
+              a(href='images/portfolio/big-item.jpg', data-gallery='prettyPhoto')
+                i.fa.fa-search-plus
+        .col-sm-3.col-xs-12.portfolio-item.wordpress
+          .view.efffect
+            .portfolio-image
+              img(src='images/portfolio/6.jpg', alt='')
+            .mask.text-center
+              h3 Novel
+              h4 Lorem ipsum dolor sit amet consectetur
+              a(href='#')
+                i.fa.fa-link
+              a(href='images/portfolio/big-item.jpg', data-gallery='prettyPhoto')
+                i.fa.fa-search-plus
+        .col-sm-3.col-xs-12.portfolio-item.html
+          .view.efffect
+            .portfolio-image
+              img(src='images/portfolio/7.jpg', alt='')
+            .mask.text-center
+              h3 Novel
+              h4 Lorem ipsum dolor sit amet consectetur
+              a(href='#')
+                i.fa.fa-link
+              a(href='images/portfolio/big-item.jpg', data-gallery='prettyPhoto')
+                i.fa.fa-search-plus
+        .col-sm-3.col-xs-12.portfolio-item.joomla
+          .view.efffect
+            .portfolio-image
+              img(src='images/portfolio/8.jpg', alt='')
+            .mask.text-center
+              h3 Novel
+              h4 Lorem ipsum dolor sit amet consectetur
+              a(href='#')
+                i.fa.fa-link
+              a(href='images/portfolio/big-item.jpg', data-gallery='prettyPhoto')
+                i.fa.fa-search-plus
+        .col-sm-3.col-xs-12.portfolio-item.html
+          .view.efffect
+            .portfolio-image
+              img(src='images/portfolio/9.jpg', alt='')
+            .mask.text-center
+              h3 Novel
+              h4 Lorem ipsum dolor sit amet consectetur
+              a(href='#')
+                i.fa.fa-link
+              a(href='images/portfolio/big-item.jpg', data-gallery='prettyPhoto')
+                i.fa.fa-search-plus
+        .col-sm-3.col-xs-12.portfolio-item.wordpress
+          .view.efffect
+            .portfolio-image
+              img(src='images/portfolio/10.jpg', alt='')
+            .mask.text-center
+              h3 Novel
+              h4 Lorem ipsum dolor sit amet consectetur
+              a(href='#')
+                i.fa.fa-link
+              a(href='images/portfolio/big-item.jpg', data-gallery='prettyPhoto')
+                i.fa.fa-search-plus
+        .col-sm-3.col-xs-12.portfolio-item.joomla
+          .view.efffect
+            .portfolio-image
+              img(src='images/portfolio/11.jpg', alt='')
+            .mask.text-center
+              h3 Novel
+              h4 Lorem ipsum dolor sit amet consectetur
+              a(href='#')
+                i.fa.fa-link
+              a(href='images/portfolio/big-item3.jpg', data-gallery='prettyPhoto')
+                i.fa.fa-search-plus
+        .col-sm-3.col-xs-12.portfolio-item.megento
+          .view.efffect
+            .portfolio-image
+              img(src='images/portfolio/12.jpg', alt='')
+            .mask.text-center
+              h3 Novel
+              h4 Lorem ipsum dolor sit amet consectetur
+              a(href='#')
+                i.fa.fa-link
+              a(href='images/portfolio/big-item4.jpg', data-gallery='prettyPhoto')
+                i.fa.fa-search-plus
+  // /#portfolio
+  section#clients.parallax-section
+    .container
+      .clients-wrapper
+        .row.text-center
+          .col-sm-8.col-sm-offset-2
+            h2.title-one Clients Say About Us
+            p
+              | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+        #clients-carousel.carousel.slide(data-ride='carousel')
+          // Indicators
+          ol.carousel-indicators
+            li.active(data-target='#clients-carousel', data-slide-to='0')
+            li(data-target='#clients-carousel', data-slide-to='1')
+            li(data-target='#clients-carousel', data-slide-to='2')
+          // Wrapper for slides
+          .carousel-inner
+            .item.active
+              .single-client
+                .media
+                  img.pull-left(src='images/clients/client1.jpg', alt='')
+                  .media-body
+                    blockquote
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                      small Someone famous in Source Title
+                      a(href='') www.yourwebsite.com
+            .item
+              .single-client
+                .media
+                  img.pull-left(src='images/clients/client3.jpg', alt='')
+                  .media-body
+                    blockquote
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                      small Someone famous in Source Title
+                      a(href='') www.yourwebsite.com
+            .item
+              .single-client
+                .media
+                  img.pull-left(src='images/clients/client2.jpg', alt='')
+                  .media-body
+                    blockquote
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                      small Someone famous in Source Title
+                      a(href='') www.yourwebsite.com
+  // /#clients
+  section#blog
+    .container
+      .row.text-center.clearfix
+        .col-sm-8.col-sm-offset-2
+          h2.title-one Our Blog
+          p.blog-heading
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+      .row
+        .col-sm-4
+          .single-blog
+            img(src='images/blog/1.jpg', alt='')
+            h2 Lorem ipsum dolor sit amet
+            ul.post-meta
+              li
+                i.fa.fa-pencil-square-o
+                strong  Posted By:
+                |  John
+              li
+                i.fa.fa-clock-o
+                strong  Posted On:
+                |  Apr 15 2014
+            .blog-content
+              p
+                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            a.btn.btn-primary(href='', data-toggle='modal', data-target='#blog-detail') Read More
+          #blog-detail.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+              .modal-content
+                .modal-body
+                  button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                  img(src='images/blog/3.jpg', alt='')
+                  h2 Lorem ipsum dolor sit amet
+                  p
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                  p
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        .col-sm-4
+          .single-blog
+            img(src='images/blog/2.jpg', alt='')
+            h2 Lorem ipsum dolor sit amet
+            ul.post-meta
+              li
+                i.fa.fa-pencil-square-o
+                strong  Posted By:
+                |  John
+              li
+                i.fa.fa-clock-o
+                strong  Posted On:
+                |  Apr 15 2014
+            .blog-content
+              p
+                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            a.btn.btn-primary(href='', data-toggle='modal', data-target='#blog-two') Read More
+          #blog-two.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+              .modal-content
+                .modal-body
+                  button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                  img(src='images/blog/2.jpg', alt='')
+                  h2 Lorem ipsum dolor sit amet
+                  p
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                  p
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        .col-sm-4
+          .single-blog
+            img(src='images/blog/3.jpg', alt='')
+            h2 Lorem ipsum dolor sit amet
+            ul.post-meta
+              li
+                i.fa.fa-pencil-square-o
+                strong  Posted By:
+                |  John
+              li
+                i.fa.fa-clock-o
+                strong  Posted On:
+                |  Apr 15 2014
+            .blog-content
+              p
+                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            a.btn.btn-primary(href='', data-toggle='modal', data-target='#blog-three') Read More
+          #blog-three.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+              .modal-content
+                .modal-body
+                  button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                  img(src='images/blog/3.jpg', alt='')
+                  h2 Lorem ipsum dolor sit amet
+                  p
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                  p
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        .col-sm-4
+          .single-blog
+            img(src='images/blog/3.jpg', alt='')
+            h2 Lorem ipsum dolor sit amet
+            ul.post-meta
+              li
+                i.fa.fa-pencil-square-o
+                strong  Posted By:
+                |  John
+              li
+                i.fa.fa-clock-o
+                strong  Posted On:
+                |  Apr 15 2014
+            .blog-content
+              p
+                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            a.btn.btn-primary(href='', data-toggle='modal', data-target='#blog-four') Read More
+          #blog-four.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+              .modal-content
+                .modal-body
+                  button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                  img(src='images/blog/3.jpg', alt='')
+                  h2 Lorem ipsum dolor sit amet
+                  p
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                  p
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        .col-sm-4
+          .single-blog
+            img(src='images/blog/2.jpg', alt='')
+            h2 Lorem ipsum dolor sit amet
+            ul.post-meta
+              li
+                i.fa.fa-pencil-square-o
+                strong  Posted By:
+                |  John
+              li
+                i.fa.fa-clock-o
+                strong  Posted On:
+                |  Apr 15 2014
+            .blog-content
+              p
+                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            a.btn.btn-primary(href='', data-toggle='modal', data-target='#blog-six') Read More
+          #blog-six.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+              .modal-content
+                .modal-body
+                  button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                  img(src='images/blog/2.jpg', alt='')
+                  h2 Lorem ipsum dolor sit amet
+                  p
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                  p
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        .col-sm-4
+          .single-blog
+            img(src='images/blog/1.jpg', alt='')
+            h2 Lorem ipsum dolor sit amet
+            ul.post-meta
+              li
+                i.fa.fa-pencil-square-o
+                strong  Posted By:
+                |  John
+              li
+                i.fa.fa-clock-o
+                strong  Posted On:
+                |  Apr 15 2014
+            .blog-content
+              p
+                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            a.btn.btn-primary(href='', data-toggle='modal', data-target='#blog-seven') Read More
+          #blog-seven.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+              .modal-content
+                .modal-body
+                  button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                  img(src='images/blog/1.jpg', alt='')
+                  h2 Lorem ipsum dolor sit amet
+                  p
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                  p
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+  // /#blog
+  section#contact
+    .container
+      .row.text-center.clearfix
+        .col-sm-8.col-sm-offset-2
+          .contact-heading
+            h2.title-one Contact With Us
+            p Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+    .container
+      .contact-details
+        .pattern
+        .row.text-center.clearfix
+          .col-sm-6
+            .contact-address
+              address
+                p
+                  span Devs
+                  | Cluster
+                strong
+                  | 36 North Kafrul
+                  br
+                  | Dhaka Cantonment Area
+                  br
+                  |  Dhaka-1206, Bangladesh
+                br
+                small ( Lorem ipsum dolor sit amet, consectetuer adipiscing elit )
+              .social-icons
+                a(href='#')
+                  i.fa.fa-facebook
+                a(href='#')
+                  i.fa.fa-twitter
+                a(href='#')
+                  i.fa.fa-google-plus
+                a(href='#')
+                  i.fa.fa-dribbble
+                a(href='#')
+                  i.fa.fa-linkedin
+          .col-sm-6
+            #contact-form-section
+              .status.alert.alert-success(style='display: none')
+              form#contact-form.contact(name='contact-form', method='post', action='send-mail.php')
+                .form-group
+                  input.form-control.name-field(type='text', name='name', required='required', placeholder='Your Name')
+                .form-group
+                  input.form-control.mail-field(type='email', name='email', required='required', placeholder='Your Email')
+                .form-group
+                  textarea#message.form-control(name='message', required='required', rows='8', placeholder='Message')
+                .form-group
+                  button.btn.btn-primary(type='submit') Send
+  // /#contact
+  footer#footer
+    .container
+      .text-center
+        p
+          | Copyright © 2014 -
+          a(href='http://mostafiz.me/') Mostafiz
+          |  | All Rights Reserved
+  // /#footer
