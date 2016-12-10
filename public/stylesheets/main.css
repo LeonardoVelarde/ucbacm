@@ -54,16 +54,16 @@ a {
   -moz-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms;
-  color: #35f57c; }
+  color: #f4c522; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif; }
 
 .slider-btn {
-  background-color: #35f57c;
+  background-color: #f4c522;
   color: #FFF;
-  -webkit-box-shadow: inset 0 0 0 2px #35f57c;
-  box-shadow: inset 0 0 0 2px #35f57c;
+  -webkit-box-shadow: inset 0 0 0 2px #f4c522;
+  box-shadow: inset 0 0 0 2px #f4c522;
   text-transform: uppercase;
   width: 190px;
   text-align: center;
@@ -257,7 +257,7 @@ h1, h2, h3, h4, h5, h6 {
 #navigation .navbar-inverse .navbar-nav .active a:focus,
 #navigation .navbar-nav.navbar-right li a:hover {
   color: #fff;
-  background-color: #35f57c; }
+  background-color: #f4c522; }
 
 /*======================
 ====Main Slider CSS=====
@@ -404,14 +404,14 @@ h1, h2, h3, h4, h5, h6 {
   position: relative; }
 
 .title-one:after {
-  color: #35f57c;
+  color: #f4c522;
   content: "||";
   position: absolute;
   right: -40px;
   top: -2px; }
 
 .title-one:before {
-  color: #35f57c;
+  color: #f4c522;
   content: "||";
   left: -40px;
   position: absolute;
@@ -444,13 +444,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-us .nav-tabs li a {
   border-top: 2px solid #f6f6f6;
-  color: #35f57c; }
+  color: #f4c522; }
 
 .about-us .nav-tabs li.active a,
 .about-us .nav-tabs li.active a:hover,
 .about-us .nav-tabs li.active a:focus {
   border-radius: 0;
-  border-top: 2px solid #35f57c;
+  border-top: 2px solid #f4c522;
   color: #333333; }
 
 .about-us .tab-content
@@ -486,7 +486,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   font-size: 13px;
   color: #fff;
-  background-color: #35f57c; }
+  background-color: #f4c522; }
 
 .skillbar-title span {
   float: none;
@@ -495,7 +495,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   text-align: left;
   display: block;
-  background-color: #35f57c;
+  background-color: #f4c522;
   padding: 0 15px;
   height: 35px;
   line-height: 35px; }
@@ -503,7 +503,7 @@ h1, h2, h3, h4, h5, h6 {
 .skillbar-bar {
   height: 35px;
   width: 0px;
-  background-color: #35f57c;
+  background-color: #f4c522;
   box-shadow: 0 1px 0 0 #333333; }
 
 .skill-bar-percent {
@@ -561,10 +561,10 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: all 0.9s ease 0s; }
 
 .single-service:hover {
-  background-color: #35f57c; }
+  background-color: #f4c522; }
 
 .single-service:hover i {
-  color: #35f57c;
+  color: #f4c522;
   -moz-transform: scale(1.1) rotate(360deg);
   -webkit-transform: scale(1.1) rotate(360deg);
   -o-transform: scale(1.1) rotate(360deg);
@@ -693,7 +693,7 @@ h1, h2, h3, h4, h5, h6 {
 .portfolio-filter li a:active,
 #portfolio
 .portfolio-filter li .active {
-  border: 1px solid #35f57c;
+  border: 1px solid #f4c522;
   color: #686868;
   box-shadow: none;
   -webkit-box-shadow: none;
@@ -796,7 +796,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 8px; }
 
 .mask i:hover {
-  background-color: #35f57c;
+  background-color: #f4c522;
   color: #fff; }
 
 /*====================
@@ -882,7 +882,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase; }
 
 .clients p span {
-  color: #35f57c; }
+  color: #f4c522; }
 
 /*=====================
 ======Our Blog CSS=====
@@ -914,7 +914,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff; }
 
 .single-blog:hover.single-blog .btn-primary {
-  background-color: #35f57c;
+  background-color: #f4c522;
   color: #fff;
   border-color: #fff;
   transition: all 0.9s ease 0s;
@@ -957,13 +957,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .single-blog .btn-primary {
   text-transform: uppercase;
-  border: 1px solid #35f57c;
+  border: 1px solid #f4c522;
   color: #686868;
   background-color: rgba(255, 255, 255, 0);
-  border-color: #35f57c; }
+  border-color: #f4c522; }
 
 .single-blog:hover.single-blog .btn-primary:hover {
-  background-color: #35f57c;
+  background-color: #f4c522;
   color: #fff; }
 
 #blog-detail .modal-body {
@@ -1038,8 +1038,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 2px; }
 
 .social-icons a:hover {
-  color: #35f57c;
-  border: 1px solid #35f57c; }
+  color: #f4c522;
+  border: 1px solid #f4c522; }
 
 .contact-address .social-icons,
 .contact-address address {
@@ -1051,7 +1051,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px; }
 
 .contact-address p span {
-  color: #35f57c; }
+  color: #f4c522; }
 
 #contact-form-section {
   padding: 35px;
@@ -1059,7 +1059,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 390px; }
 
 #contact-form-section .btn-primary {
-  background-color: #35f57c;
+  background-color: #f4c522;
   border-color: #f6f6f6;
   border-radius: 0;
   padding: 10px 35px;
@@ -1096,7 +1096,7 @@ h1, h2, h3, h4, h5, h6 {
   resize: none; }
 
 #contact-form-section .form-control:focus {
-  border-color: #35f57c;
+  border-color: #f4c522;
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none; }
@@ -1116,7 +1116,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
 #footer a {
-  color: #35f57c; }
+  color: #f4c522; }
 
 /*============================
 ======Carousel Effect CSS=====

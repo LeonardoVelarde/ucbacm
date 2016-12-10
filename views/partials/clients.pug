@@ -1,0 +1,47 @@
+section#clients.parallax-section
+  .container
+    .clients-wrapper
+      .row.text-center
+        .col-sm-8.col-sm-offset-2
+          h2.title-one Clients Say About Us
+          p
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+      #clients-carousel.carousel.slide(data-ride='carousel')
+        // Indicators
+        ol.carousel-indicators
+          li.active(data-target='#clients-carousel', data-slide-to='0')
+          li(data-target='#clients-carousel', data-slide-to='1')
+          li(data-target='#clients-carousel', data-slide-to='2')
+        // Wrapper for slides
+        .carousel-inner
+          .item.active
+            .single-client
+              .media
+                img.pull-left(src='images/clients/client1.jpg', alt='')
+                .media-body
+                  blockquote
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                    small Someone famous in Source Title
+                    a(href='') www.yourwebsite.com
+          .item
+            .single-client
+              .media
+                img.pull-left(src='images/clients/client3.jpg', alt='')
+                .media-body
+                  blockquote
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                    small Someone famous in Source Title
+                    a(href='') www.yourwebsite.com
+          .item
+            .single-client
+              .media
+                img.pull-left(src='images/clients/client2.jpg', alt='')
+                .media-body
+                  blockquote
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                    small Someone famous in Source Title
+                    a(href='') www.yourwebsite.com
+// /#clients

@@ -1,0 +1,49 @@
+section#contact
+  .container
+    .row.text-center.clearfix
+      .col-sm-8.col-sm-offset-2
+        .contact-heading
+          h2.title-one Contact With Us
+          p Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+  .container
+    .contact-details
+      .pattern
+      .row.text-center.clearfix
+        .col-sm-6
+          .contact-address
+            address
+              p
+                span Devs
+                | Cluster
+              strong
+                | 36 North Kafrul
+                br
+                | Dhaka Cantonment Area
+                br
+                |  Dhaka-1206, Bangladesh
+              br
+              small ( Lorem ipsum dolor sit amet, consectetuer adipiscing elit )
+            .social-icons
+              a(href='#')
+                i.fa.fa-facebook
+              a(href='#')
+                i.fa.fa-twitter
+              a(href='#')
+                i.fa.fa-google-plus
+              a(href='#')
+                i.fa.fa-dribbble
+              a(href='#')
+                i.fa.fa-linkedin
+        .col-sm-6
+          #contact-form-section
+            .status.alert.alert-success(style='display: none')
+            form#contact-form.contact(name='contact-form', method='post', action='send-mail.php')
+              .form-group
+                input.form-control.name-field(type='text', name='name', required='required', placeholder='Your Name')
+              .form-group
+                input.form-control.mail-field(type='email', name='email', required='required', placeholder='Your Email')
+              .form-group
+                textarea#message.form-control(name='message', required='required', rows='8', placeholder='Message')
+              .form-group
+                button.btn.btn-primary(type='submit') Send
+// /#contact
