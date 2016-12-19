@@ -9,6 +9,8 @@
     "tests:from": "./node_modules/.bin/mocha",
     "coverage": "node_modules/.bin/istanbul cover node_modules/mocha/bin/_mocha --report html tests/",
     "coverage:from": "node_modules/.bin/istanbul cover node_modules/mocha/bin/_mocha --report html",
+    "createmigration": "node_modules/.bin/pg-migrate create",
+    "migrate": "node_modules/.bin/pg-migrate migrate up",
     "sass": "node_modules/.bin/node-sass -o public/stylesheets/ public/sass/"
   },
   "dependencies": {
@@ -16,16 +18,18 @@
     "bower": "^1.7.9",
     "chai": "^3.5.0",
     "cookie-parser": "~1.3.5",
+    "db-migrate": "^0.10.0-beta.20",
+    "db-migrate-pg": "^0.1.11",
     "debug": "~2.2.0",
     "escape-html": "^1.0.3",
     "express": "~4.13.1",
     "morgan": "~1.6.1",
-    "pug": "^2.0.0-beta3",
+    "pg": "^6.1.2",
+    "pug": "^2.0.0-beta6",
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
     "coveralls": "^2.11.11",
-    "db-migrate": "^0.10.0-beta.20",
     "istanbul": "^0.4.4",
     "mocha": "^2.5.3",
     "mocha-lcov-reporter": "^1.2.0"

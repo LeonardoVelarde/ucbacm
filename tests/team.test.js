@@ -2,7 +2,7 @@ var Team = require('../models/Team');
 var assert = require('chai').assert;
 
 function createOneMemberTeam(){
-  return new Team('TeamName', ['First TeamMember']);
+  return new Team('TeamName', [1]);
 }
 
 describe('Team', function() {
@@ -25,28 +25,28 @@ describe('Team', function() {
 
   it('should create a team with 1 team member and return his name', function(){
     var newTeam = createOneMemberTeam();
-    assert.equal(newTeam.member1, 'First TeamMember');
+    assert.equal(newTeam.member1id, 1);
   });
 
   it('should create a team with 3 team members and return their names', function(){
-    var newTeam = new Team('', ['First TeamMember', 'Second TeamMember', 'Third TeamMember']);
-    assert.equal(newTeam.member1, 'First TeamMember');
-    assert.equal(newTeam.member2, 'Second TeamMember');
-    assert.equal(newTeam.member3, 'Third TeamMember');
+    var newTeam = new Team('', [1, 2, 3]);
+    assert.equal(newTeam.member1id, 1);
+    assert.equal(newTeam.member2id, 2);
+    assert.equal(newTeam.member3id, 3);
   });
 
   it('should have undefined team members creating a one member team', function(){
     var newTeam = createOneMemberTeam();
-    assert.isUndefined(newTeam.member2);
-    assert.isUndefined(newTeam.member3);
+    assert.isUndefined(newTeam.member2id);
+    assert.isUndefined(newTeam.member3id);
   });
 
   it('sould be able to create teams without new keyword', function(){
-    var newTeam = Team('TeamName', ['First TeamMember', 'Second TeamMember', 'Third TeamMember']);
+    var newTeam = Team('TeamName', [1, 2, 3]);
     assert.equal(newTeam.teamName, 'TeamName');
-    assert.equal(newTeam.member1, 'First TeamMember');
-    assert.equal(newTeam.member2, 'Second TeamMember');
-    assert.equal(newTeam.member3, 'Third TeamMember');
+    assert.equal(newTeam.member1id, 1);
+    assert.equal(newTeam.member2id, 2);
+    assert.equal(newTeam.member3id, 3);
   });
 
 });
