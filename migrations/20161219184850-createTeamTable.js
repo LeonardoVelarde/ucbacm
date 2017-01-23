@@ -1,5 +1,4 @@
 'use strict';
-
 var dbm;
 var type;
 var seed;
@@ -27,7 +26,7 @@ exports.up = function(db) {
 
 exports.down = function(db) {
   return db.dropTable('team', function(err){
-    if(err) console.log(err);
+    if(err) {console.log(err);}
   });
 };
 
