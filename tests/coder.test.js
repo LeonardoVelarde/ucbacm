@@ -27,9 +27,9 @@ function assertException(closureToTry, assertionClosure){
   }
 }
 
-suite('Coder', function() {
+describe('Coder', function() {
 
-  test('should create Coder object with only an object as a parameter', function() {
+  it('should create Coder object with only an object as a parameter', function() {
     var aCoderObj = getCoderObject();
     var newCoder = createCoder(aCoderObj);
     assert.isNotNull(newCoder);
@@ -43,7 +43,21 @@ suite('Coder', function() {
     assert.equal(newCoder.teamId, aCoderObj.teamId);
   });
 
-  test('should raise exception if given empty Coder object', function() {
+  it('should be able to create Coder object withput use of the new keyword', function() {
+    var aCoderObj = getCoderObject();
+    var newCoder = Coder(aCoderObj);
+    assert.isNotNull(newCoder);
+    assert.instanceOf(newCoder, Coder);
+    assert.equal(newCoder.name, aCoderObj.name);
+    assert.equal(newCoder.surname, aCoderObj.surname);
+    assert.equal(newCoder.secondName, aCoderObj.secondName);
+    assert.equal(newCoder.secondSurname, aCoderObj.secondSurname);
+    assert.equal(newCoder.currentSemester, aCoderObj.currentSemester);
+    assert.equal(newCoder.currentYear, aCoderObj.currentYear);
+    assert.equal(newCoder.teamId, aCoderObj.teamId);
+  });
+
+  it('should raise exception if given empty Coder object', function() {
     assertException(
     function(){
       new Coder({});
@@ -53,7 +67,7 @@ suite('Coder', function() {
     });
   });
 
-  test('should raise exception if given an incomplete Coder object', function() {
+  it('should raise exception if given an incomplete Coder object', function() {
     assertException(
     function(){
       var aCoderObj = getCoderObject();
@@ -65,7 +79,7 @@ suite('Coder', function() {
     });
   });
 
-  test('should not raise exception if given coder object without teamId', function() {
+  it('should not raise exception if given coder object without teamId', function() {
     var aCoderObj = getCoderObject();
     delete aCoderObj.teamId;
     var newCoder = new Coder(aCoderObj);
