@@ -1,25 +1,25 @@
-var Coder = function(aCoderObj){
+var Coder = function(aCoderPseudoObj){
   if(!(this instanceof Coder)){
-    return new Coder(aCoderObj);
+    return new Coder(aCoderPseudoObj);
   }
 
-  this.validateCoderObject(aCoderObj);
+  this.validateCoderObject(aCoderPseudoObj);
 
-  this.name = aCoderObj.name;
-  this.surname = aCoderObj.surname;
-  this.secondName = aCoderObj.secondName;
-  this.secondSurname = aCoderObj.secondSurname;
-  this.currentSemester = aCoderObj.currentSemester;
-  this.currentYear = aCoderObj.currentYear;
-  this.teamId = aCoderObj.teamId;
+  this.name = aCoderPseudoObj.name;
+  this.surname = aCoderPseudoObj.surname;
+  this.secondName = aCoderPseudoObj.secondName;
+  this.secondSurname = aCoderPseudoObj.secondSurname;
+  this.currentSemester = aCoderPseudoObj.currentSemester;
+  this.currentYear = aCoderPseudoObj.currentYear;
+  this.teamId = aCoderPseudoObj.teamId;
 };
 
-Coder.prototype.validateCoderObject = function(aCoderObj){
-  if(Object.keys(aCoderObj).length === 0){
+Coder.prototype.validateCoderObject = function(aCoderPseudoObj){
+  if(Object.keys(aCoderPseudoObj).length === 0){
     this.throwEmptyCoderObjectException();
   }
 
-  if(Object.keys(aCoderObj).indexOf('teamId') !== -1 && Object.keys(aCoderObj).length < 7){
+  if(Object.keys(aCoderPseudoObj).indexOf('teamId') !== -1 && Object.keys(aCoderPseudoObj).length < 7){
     this.throwInvalidCoderObjectException();
   }
 };

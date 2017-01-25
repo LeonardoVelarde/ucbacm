@@ -1,4 +1,5 @@
 'use strict';
+
 var dbm;
 var type;
 var seed;
@@ -14,18 +15,20 @@ exports.setup = function(options, seedLink) {
 };
 
 exports.up = function(db) {
-  return db.createTable('team', { 
+  return db.createTable('coder', {
     id: { type: 'int', primaryKey: true, autoIncrement: true },
     name: 'string',
-    member1id: 'int',
-    member2id: 'int',
-    member3id: 'int',
-    score: 'int'
+    surname: 'string',
+    secondName: 'string',
+    secondSurname: 'string',
+    semesterOfRegistration: 'string',
+    dateOfRegisttration: 'date',
+    teamId: 'int'
   });
 };
 
 exports.down = function(db) {
-  return db.dropTable('team', function(err){
+  return db.dropTable('coder', function(err){
     if(err) {console.log(err);}
   });
 };

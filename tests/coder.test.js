@@ -11,8 +11,8 @@ function getCoderObject(){
     surname : 'CoderSurname',
     secondName : 'CoderSecondName',
     secondSurname : 'CoderSecondSurname',
-    currentSemester : 1,
-    currentYear: 2016,
+    currentSemester : '1',
+    currentYear: '2016',
     teamId : 0
   };
 }
