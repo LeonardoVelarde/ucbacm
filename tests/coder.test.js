@@ -13,7 +13,7 @@ function getCoderObject(){
     secondSurname : 'CoderSecondSurname',
     semesterOfRegistration : '5',
     dateOfRegistration: new Date(),
-    teamId : 0
+    teamId : -1
   };
 }
 
