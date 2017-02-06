@@ -22,7 +22,7 @@ exports.up = function(db) {
     secondName: 'string',
     secondSurname: 'string',
     semesterOfRegistration: 'string',
-    dateOfRegisttration: 'date',
+    dateOfRegistration: 'date',
     teamId: 'int'
   });
 };

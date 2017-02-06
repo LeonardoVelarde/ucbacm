@@ -9,9 +9,9 @@ var Coder = function(aCoderPseudoObj){
   this.surname = aCoderPseudoObj.surname;
   this.secondName = aCoderPseudoObj.secondName;
   this.secondSurname = aCoderPseudoObj.secondSurname;
-  this.currentSemester = aCoderPseudoObj.currentSemester;
-  this.currentYear = aCoderPseudoObj.currentYear;
-  this.teamId = aCoderPseudoObj.teamId;
+  this.semesterOfRegistration = aCoderPseudoObj.semesterOfRegistration;
+  this.dateOfRegistration = aCoderPseudoObj.dateOfRegistration;
+  this.teamId = aCoderPseudoObj.teamId || -1;
 };
 
 Coder.prototype.validateCoderObject = function(aCoderPseudoObj){

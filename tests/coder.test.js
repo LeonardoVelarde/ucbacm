@@ -11,8 +11,8 @@ function getCoderObject(){
     surname : 'CoderSurname',
     secondName : 'CoderSecondName',
     secondSurname : 'CoderSecondSurname',
-    currentSemester : '1',
-    currentYear: '2016',
+    semesterOfRegistration : '5',
+    dateOfRegistration: new Date(),
     teamId : 0
   };
 }
@@ -38,8 +38,8 @@ describe('Coder', function() {
     assert.equal(newCoder.surname, aCoderObj.surname);
     assert.equal(newCoder.secondName, aCoderObj.secondName);
     assert.equal(newCoder.secondSurname, aCoderObj.secondSurname);
-    assert.equal(newCoder.currentSemester, aCoderObj.currentSemester);
-    assert.equal(newCoder.currentYear, aCoderObj.currentYear);
+    assert.equal(newCoder.semesterOfRegistration, aCoderObj.semesterOfRegistration);
+    assert.equal(newCoder.dateOfRegistration, aCoderObj.dateOfRegistration);
     assert.equal(newCoder.teamId, aCoderObj.teamId);
   });
 
@@ -52,8 +52,8 @@ describe('Coder', function() {
     assert.equal(newCoder.surname, aCoderObj.surname);
     assert.equal(newCoder.secondName, aCoderObj.secondName);
     assert.equal(newCoder.secondSurname, aCoderObj.secondSurname);
-    assert.equal(newCoder.currentSemester, aCoderObj.currentSemester);
-    assert.equal(newCoder.currentYear, aCoderObj.currentYear);
+    assert.equal(newCoder.semesterOfRegistration, aCoderObj.semesterOfRegistration);
+    assert.equal(newCoder.dateOfRegistration, aCoderObj.dateOfRegistration);
     assert.equal(newCoder.teamId, aCoderObj.teamId);
   });
 
