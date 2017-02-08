@@ -1,0 +1,15 @@
+.top-margin {
+  margin-top: 15%;
+}
+
+@media (max-width: 650px) {
+  .top-margin {
+    margin-top: 20%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .top-margin {
+    margin-top: 5%;
+  }
+}
