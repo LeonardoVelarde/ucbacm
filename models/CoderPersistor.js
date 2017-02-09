@@ -12,7 +12,7 @@ CoderPersistor.prototype.validateCoderObject = function(aCoderObj){
 
 CoderPersistor.prototype.saveCoderToDB = function(aCoderObj, callback){
   this.validateCoderObject(aCoderObj);
-  var aQuery = 'INSERT INTO ucbacm_schema.coder ("'+Object.keys(aCoderObj).join('", "')+'") VALUES ($1, $2, $3, $4, $5, $6, $7);';
+  var aQuery = 'INSERT INTO coder ("'+Object.keys(aCoderObj).join('", "')+'") VALUES ($1, $2, $3, $4, $5, $6, $7);';
   this.poolConnection.connect(function(err, client, done) {
     if(err) {
       return console.error('error fetching client from pool', err);

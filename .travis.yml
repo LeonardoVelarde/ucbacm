@@ -19,7 +19,7 @@ services:
   - postgresql
 before_script:
   - psql -c 'create database ucbacm;' -U postgres
+  - npm run migrate
 after_script:
-- npm run migrate
 - node_modules/.bin/istanbul cover node_modules/mocha/bin/_mocha --report lcovonly tests/
 - npm install coveralls@2.10.0 && cat ./coverage/lcov.info | coveralls

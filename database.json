@@ -4,7 +4,6 @@
       "user": "postgres",
       "password": "postgres",
       "host": "localhost",
-      "database": "ucbacm",
-      "schema": "ucbacm_schema"
+      "database": "ucbacm"
   }
 }

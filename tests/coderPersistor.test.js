@@ -45,7 +45,7 @@ describe('CoderPersistor', function() {
       if(err) {
         return console.error('error fetching client from pool', err);
       }
-      client.query('DELETE FROM ucbacm_schema.coder;', function(err) {
+      client.query('DELETE FROM coder;', function(err) {
         done();
         if(err) {
           return console.error('Error running query\n', err);
@@ -71,7 +71,7 @@ describe('CoderPersistor', function() {
         if(err) {
           return console.error('error fetching client from pool', err);
         }
-        client.query('SELECT name FROM ucbacm_schema.coder;', function(err, result) {
+        client.query('SELECT name FROM coder;', function(err, result) {
           done();
           if(err) {
             return console.error('Error running query\n', err);
