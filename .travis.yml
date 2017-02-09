@@ -3,6 +3,12 @@ node_js:
   - "6"
   - "4.4"
   - "iojs"
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
 cache:
   directories:
     - node_modules
